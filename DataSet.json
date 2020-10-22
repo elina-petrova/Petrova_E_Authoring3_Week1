@@ -1,6 +1,6 @@
 {
-    "Justin":{"name":"Jastin", "role":"Coordinator", "nickname":"idontknow"},
-    "John":{"name":"John","role":"prof", "nickname":"just jonh"},
-    "Joe":{"name":"Joe","role":"prof", "nickname":"trddy bear"},
-    "Pan":{"name":"Pan","role":"code ninja", "nickname":"spider"}
+    "Justin":{"name":"Jastin", "role":"Coordinator", "nickname":"idontknow", "avatar":"justin.jpg"},
+    "John":{"name":"John","role":"prof", "nickname":"just jonh", "avatar":"john.jpg"},
+    "Joe":{"name":"Joe","role":"prof", "nickname":"trddy bear", "avatar":"joe.jpg"},
+    "Pan":{"name":"Pan","role":"code ninja", "nickname":"spider", "avatar":"pan.jpg"}
 }
