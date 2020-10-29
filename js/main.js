@@ -1,17 +1,11 @@
 // import your package here
-
+import {fetchData} from "./modules/DataMiner.js";
 
 (()=>{
+    
     // start with a Fetch all
 
-    fetch('./DataSet.json')
-        .then(res => res.json())
-        .then(data => {
-            //this is our data (DataSet.json)
-            //converted to a plain JavaScript object
-            handleDataSet(data);
-        })
-        .catch((error)=> console.log(error));
+
 
     console.log('loaded');
 
@@ -27,7 +21,7 @@
         for (let user in data){
             let currentUser = userTemplate.cloneNode(true),
                 currentUserText = currentUser.querySelector('.user').children;
-
+ 
                 currentUserText[1].src = `images/${data[user].avatar}.jpg`;
                 currentUserText[2].textContent = data[user].name;
                 currentUserText[3].textContent = data[user].role;
@@ -36,6 +30,8 @@
                 userSection.appendChild(currentUser);
         }
     }
+ fetchData('./DataSet.json').then(data => handleDataSet(data)).catch(err => console.log(err));
+ fetchData('./AnotherDataSet.json').then(data => handleDataSet(data)).catch(err => console.log(err));
     // handleDataSet(Team);
 
 
